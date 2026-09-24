@@ -1,0 +1,1 @@
+- [Studio and engine boundary](heygen-studio-architecture.md) — keep the HeyGen-style frontend separate from the local LivePortrait renderer until an explicit process/API bridge is in place.

@@ -1,0 +1,19 @@
+kind = "web"
+previewPath = "/"
+title = "Mirlift Studio"
+description = "Studio local de création vidéo avec avatars, scripts et moteur LivePortrait."
+version = "1.0.0"
+id = "artifacts/advanced-liveportrait"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 8000
+
+[services.development]
+run = "pnpm --filter @workspace/advanced-liveportrait run dev"
+
+[services.env]
+PORT = "8000"
+BASE_PATH = "/"
